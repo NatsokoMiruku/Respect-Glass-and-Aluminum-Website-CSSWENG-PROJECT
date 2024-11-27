@@ -1,0 +1,164 @@
+#mainDiv {
+    max-height: 100vh;
+    display: absolute;
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom, white, black);
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+}
+
+#infoDiv{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 20vw;
+    align-items: center;
+    margin-top: 1vh;
+    margin-left: 5.5vw;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+#imagediv{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pfp{
+    border-style: solid;
+    border-radius: 10vh;
+    height: 20vh;
+    width: 20vh;
+}
+
+#email{
+    margin-top: .5vh;
+    text-align: center;
+}
+
+#userInfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#address{
+    text-align: center;
+}
+
+#orders
+{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#OrdersDiv{
+    width: 68vw;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    background: rgb(240, 240, 240);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+
+
+#OrderHistory{
+    flex-grow: inherit;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    width: 65vw;
+    height: 50vh;
+    border-radius: 2vh;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 30px;
+}
+
+#OngoingOrders{
+    flex-grow: inherit;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 1vh;
+    margin-left: 2vh;
+    width: 65vw;
+    height: 35vh;
+    border-radius: 2vh;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 25px;
+}
+
+.shrinker{
+    margin-left: -7vw;
+    max-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    transform: scale(0.75);
+}
+
+#edit{
+    position: absolute;
+    margin-top: 2vh;
+    left: 21.5vw;
+}
+
+#modal{
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin-top:-6.75vh ;
+    margin-left:-21.5vw ;
+    position: absolute;
+    background: linear-gradient(to bottom, white, black);
+}
+
+#form{
+    width: 50vw;
+    background: rgb(240, 240, 240);
+    border-radius: 2vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#formDiv{
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+#close{
+    position: absolute;
+    left: 70%;
+    top: 3%;
+    width: 30px;
+}
+
+#submitButton{
+    margin-top: 40px;
+    margin-left: 260px;
+}
+
+

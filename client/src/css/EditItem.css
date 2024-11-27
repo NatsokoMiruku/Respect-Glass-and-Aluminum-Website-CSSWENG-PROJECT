@@ -1,0 +1,39 @@
+.ToggleEdit {
+    z-index: 2;
+}
+
+.editInput {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 8vw;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.modal {
+    
+    z-index: 1;
+
+    border: 2px solid;
+    padding: 1vh;
+    margin-left: 50vw;
+    margin-left: -50vw;
+
+    margin-right: 50vw;
+    margin-right: -50vw;
+
+    width: 70vw;
+    position: relative;
+    left: calc(90vw);
+    left: calc(57.5vw + 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+#submitButton {
+margin-left: 1vw;
+  
+}

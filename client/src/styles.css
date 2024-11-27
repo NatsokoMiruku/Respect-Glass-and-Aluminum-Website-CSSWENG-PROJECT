@@ -1,0 +1,92 @@
+/* CSS RESET */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+* {
+margin: 0;
+}
+
+body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+font-family: 'Noto Sans';
+}
+
+
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+
+input, button, textarea, select {
+font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+
+.container {
+    padding: 20px;
+}
+  
+.title {
+    text-align: center;
+}
+  
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+  
+.form_input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.ids {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Create 7 equal columns */
+    gap: 10px;
+}
+  
+.inventory-header {
+    display: contents; /* Ensures the headers align with the grid layout */
+}
+  
+.inventory-header > div {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+  
+.inventory-body {
+    display: contents; /* Ensures the body aligns with the grid layout */
+}
+  
+.inventory-body > div {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-weight: lighter;
+}
+  
+
+.form {
+    display:flex;
+    gap: 0.5rem;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.form_input {
+    flex: 1;
+    padding: 0.25rem 0.5rem;
+}
+

@@ -1,0 +1,216 @@
+
+.quotation-page {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 20px;
+    color: black;
+    display: flex;
+    margin-top: 4%;
+    background-color: #f8f9fa;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 240px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.toggle-sort, .sort-select, .filter-select, .delete-button {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-sort:hover, .sort-select:hover, .filter-select:hover, .delete-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.quotation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.quotation-item {
+    /* border: 1px solid black; */
+    padding: 15px;
+    /* border-radius: 25px; */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 1em;
+}
+
+.quotation-item:hover {
+    transform: scale(1.02);
+}
+
+.quotation-item button {
+    margin-top: 10px;
+}
+
+.value {
+    color:white;
+}
+
+.quotation-container {
+    /* border: 1px solid black; */
+    padding: 20px;
+    margin: 10px 0;
+    /* border-radius: 10px; */
+    background-color: white;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+    padding-bottom: 100px;
+}
+
+.edit-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.edit-order {
+    margin-top: 15px;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.edit-select {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.quotation-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.quotation-info{
+    float: left;
+}
+
+.quotation-header {
+   text-align: left;
+}
+
+.quotation-detail-row{
+    text-align: left;
+}
+
+.quotation-header {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.quotation-detail {
+    margin: 5px 0;
+    /*margin-left: 60px;*/
+    flex: 2;
+    text-align: left;
+}
+
+/* .quotation-detail-date{
+    margin-left: 1000px;
+}
+
+.detail-label-date{
+    margin-left: 900px;
+} */
+
+.quotation-item .detail-label {
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: left;
+    margin-left: 8vh;
+}
+
+
+.description-title{
+    flex: 3;
+    margin-left: 30px;
+}
+
+#name-detail {
+    margin-left: 10vh;
+}
+
+#email-detail {
+    margin-left: 10vh;
+}
+
+#contact-detail{
+    margin-left: 7.5vh;
+}
+
+.quotation-description{
+    margin: 5px 0;
+    margin-left: 600px;
+    padding-right: 350px;
+    position: absolute;
+}
+
+#quotation-desc{
+    margin: 5px 0;
+    margin-left: 8vh;
+    position: absolute;
+    overflow-wrap: anywhere;
+}

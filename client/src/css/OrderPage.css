@@ -1,0 +1,172 @@
+.orders-page {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 20px;
+    color: black;
+    display: flex;
+    /* margin-top: 4%; */
+    padding-top: 5em;
+    background: #fcfefe;
+    min-height: 92.3vh;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 240px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.toggle-sort, .sort-select, .filter-select, .delete-button {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-sort:hover, .sort-select:hover, .filter-select:hover, .delete-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.orders-list .order-item {
+    /* border: 1px solid black; */
+    padding: 15px;
+    /* border-radius: 25px; */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.order-item:hover {
+    transform: scale(1.02);
+}
+
+.order-item button {
+    margin-top: 10px;
+}
+
+.value {
+    color:white;
+}
+
+.orders-list .order-container {
+    /* border: 1px solid black; */
+    padding: 20px;
+    margin: 10px 0;
+    /* border-radius: 10px; */
+    background-color: white;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+}
+
+.edit-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.edit-order {
+    margin-top: 15px;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.edit-select {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.edit-note {
+    color: gray;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.order-header, .order-detail-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-details {
+    flex-direction: column;
+    margin: auto;
+}
+
+
+.order-header {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.order-detail {
+    margin: 5px 0;
+    flex: 1;
+    text-align: center;
+}
+
+.detail-label {
+    margin: 5px 0;
+    flex: 1;
+    text-align: center;
+}

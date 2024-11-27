@@ -1,0 +1,21 @@
+.image-slider {
+    margin-top: -5em;
+    position: relative;
+    height: 100%;
+    width: 70%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 10px;
+}
+
+.slide {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s;
+    }
+
+.slide.active {
+    opacity: 1;
+}

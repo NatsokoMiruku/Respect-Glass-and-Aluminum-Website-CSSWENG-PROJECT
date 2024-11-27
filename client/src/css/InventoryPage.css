@@ -1,0 +1,302 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: ( white,);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  position: relative;
+}
+
+.header-background {
+  position: relative;
+  width: 103%;
+  height: 35%; 
+  bottom: 33%;
+}
+
+.header-background:after {
+  content: ""; 
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  height: 40%;  
+  z-index: -1; 
+}
+
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px; 
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 3;
+  transition: left 0.3s cubic-bezier(0.36, -0.01, 0, 0.77);
+}
+
+.sidebar-toggle.show {
+  left: 400px;
+}
+
+.sidebar-toggle:hover {
+  background-color: #333;
+}
+
+.sidebar {
+  width: 350px;
+  position: fixed;
+  left: -300px; 
+  top: 0;
+  bottom: 0;
+  background: #f4f4f4;
+  padding: 0px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s cubic-bezier(.36, -.01, 0, .77);
+}
+
+.sidebar.show {
+  left: 0; 
+}
+
+.inventory-header, .inventory-body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  text-align: center;
+}
+
+.inventory-header {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.inventory-body .inventory-item {
+  display: contents;
+}
+
+.inventory-body div {
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.inventory-body .invName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: #ebebeb;
+}
+
+.inventory-body .invQty {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: white;
+}
+
+.inventory-body .invUsed {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: #ebebeb;
+}
+
+.inventory-body .invRming {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: white;
+}
+
+.inventory-body .invPPU {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: #ebebeb;
+}
+
+.inventory-body .invTotal {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: white;
+}
+
+.inventory-body .invName:hover {
+  background-color: #f1f1f1;
+  font-weight: 400;
+}
+
+.inventory-body .invName button {
+  display: none;
+  font-weight: 400;
+}
+
+.inventory-body .invName:hover button {
+  display: inline-block;
+  font-weight: 400;
+}
+
+.filter-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+  z-index: 1;
+}
+
+#types {
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.button-container{
+  width:80%;
+}
+
+.button-container button{
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  min-width: 300px; 
+  max-width: 90vw; 
+  box-sizing: border-box;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.inventory-wrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+    display: flex;
+}
+
+.inventory-header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.inventory-body {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+}
+
+.inventory-body .inventory-item {
+  display: contents;
+}
+
+.inventory-body div {
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.inventory-body .invName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: #ebebeb;
+}
+
+.inventory-body .invQty {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: white;
+}
+
+.inventory-body .invUsed {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: #ebebeb;
+}
+
+.inventory-body .invRming {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: white;
+}
+
+.inventory-body .invPPU {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: #ebebeb;
+}
+
+.inventory-body .invTotal {
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background-color: white;
+}
+
+.inventory-body .invName:hover {
+  background-color: #f1f1f1;
+  font-weight: 400;
+}
+
+.inventory-body .invName button {
+  display: none;
+  font-weight: 400;
+}
+
+.inventory-body .invName:hover button {
+  display: inline-block;
+  font-weight: 400;
+}

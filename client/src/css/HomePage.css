@@ -1,0 +1,215 @@
+/* HomePage.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Noto Sans';
+}
+
+.homePage {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    height: 100vh; /* Set the home page height to 100vh */
+    padding: 0;
+}
+
+.homePage h1 {
+    color: #343a40;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.hero1 {
+    margin-top: 30vh;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    background: #ffffff;
+    padding-bottom: 30vh;
+}
+
+.hero1 h1 {
+    color: #000000;
+    font-size: 3em;
+}
+
+.hero1 p {
+    color: #000000;
+    font-size: 1.5em;
+}
+
+.hero2 {
+    background-color: #ffffff;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buffer {
+    height: 10vh;
+    background-color: whitesmoke;
+}
+
+.page2 {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page2 h1 {
+    color: #343a40;
+    font-size: 2.5em;
+}
+
+.hero2 h2 {
+    color: #343a40;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.hero2 p {
+    color: #343a40;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.hero2 img {
+    width: 100%;
+    height: auto;
+} 
+
+.cta {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product1 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    margin-right: 150px;
+}
+
+.product1image {
+    background-image: url('../../public/images/bronzemirror.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.product2 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+}
+
+.product2image {
+    background-image: url('../../public/images/copperfree.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.product3 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    margin-left: 150px;
+}
+
+.product3image {
+    background-image: url('../../public/images/regularmirror.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.product-image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover; /* This will ensure the images maintain their aspect ratio */
+}
+
+.contactus {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10vh;
+}
+
+.contactus .text {
+    text-align: left;
+}
+
+.hero4 {
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 10vh;
+}
+
+.hero4left {
+    margin-left: 10vh;
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.location {
+    text-align: left;
+}
+
+.hero4right {
+    width: 100%;
+    height: 69vh;
+}
+
+.footer {
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 -3.8px 3.8px rgba(0, 0, 0, 0.05);
+}
+
+.footer p {
+    color: rgb(112, 112, 112); /* Ensures text in the footer is black */
+}
